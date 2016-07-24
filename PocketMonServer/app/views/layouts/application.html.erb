@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PocketMachine</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<% if current_user %>
+  <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+  <% else %> 
+    <%= link_to "Login", new_user_session_path %>
+<% end %>
+<br>
+<br>
+<h1> 관리자 이외에 접근이 불가능한 페이지 입니다. </h1>
+<%= yield %>
+
+</body>
+</html>

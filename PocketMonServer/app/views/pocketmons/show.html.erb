@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @pocketmon.code %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @pocketmon.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @pocketmon.longitude %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @pocketmon.level %>
+</p>
+
+<%= link_to 'Edit', edit_pocketmon_path(@pocketmon) %> |
+<%= link_to 'Back', pocketmons_path %>

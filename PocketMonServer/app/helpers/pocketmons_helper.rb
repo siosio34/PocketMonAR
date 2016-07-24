@@ -1,0 +1,2 @@
+module PocketmonsHelper
+end

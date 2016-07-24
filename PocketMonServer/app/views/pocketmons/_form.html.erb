@@ -1,0 +1,33 @@
+<%= form_for(@pocketmon) do |f| %>
+  <% if @pocketmon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pocketmon.errors.count, "error") %> prohibited this pocketmon from being saved:</h2>
+
+      <ul>
+      <% @pocketmon.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.number_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %><br>
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br>
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :level %><br>
+    <%= f.number_field :level %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

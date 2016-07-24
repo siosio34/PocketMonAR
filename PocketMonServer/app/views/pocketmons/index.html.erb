@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pocketmons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Level</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pocketmons.each do |pocketmon| %>
+      <tr>
+        <td><%= pocketmon.code %></td>
+        <td><%= pocketmon.latitude %></td>
+        <td><%= pocketmon.longitude %></td>
+        <td><%= pocketmon.level %></td>
+        <td><%= link_to 'Show', pocketmon %></td>
+        <td><%= link_to 'Edit', edit_pocketmon_path(pocketmon) %></td>
+        <td><%= link_to 'Destroy', pocketmon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pocketmon', new_pocketmon_path %>
