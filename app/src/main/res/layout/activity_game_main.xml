@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ar.siosi.swmaestrobackendproject.GameMain"
+    android:background="@drawable/house">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="right">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/socialBtn"
+            android:background="@drawable/contacticon"
+            android:layout_marginRight="20dp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/postBtn"
+            android:background="@drawable/sns_0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/statusBtn"
+            android:textAlignment="center"
+            android:background="#f0f0f0"
+            android:text="내 정보 보기"
+
+            />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:id="@+id/goCatchBtn"
+            android:layout_marginLeft="155dp"
+            android:gravity="right"
+            android:background="@drawable/school_gate"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+

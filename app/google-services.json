@@ -49,6 +49,37 @@
           "status": 2
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106786463586:android:da57cf8714f340ac",
+        "android_client_info": {
+          "package_name": "com.ar.siosi.swmaestrobackendproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106786463586-74eq18ss0vsf8vbg9gejt23eetn3t0ca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX4X_zNDy5THfYxoSkpt3cfNRkPvJEeWs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
     }
   ],
   "configuration_version": "1"
