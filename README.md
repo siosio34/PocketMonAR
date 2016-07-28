@@ -8,3 +8,5 @@ https://drive.google.com/open?id=0B7b2NsFTcQxvT3htT3I1bFltdjg
 http://163.180.117.118:8080 <br/>
 관리자 id : siosio3103@gmail.com <br/>
 관리자 pw : sjsdj123
+
+서버 코드는 달라진게 없으나, 관리자 인증 문제때문에 새로 커밋합니다.
